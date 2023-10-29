@@ -1,0 +1,59 @@
+body {
+    font-family: 'San Francisco', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#dashboard {
+    background-color: #fff;
+    border-radius: 10px; /* Remove rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+}
+
+#logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+}
+
+#eta {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#task {
+    font-size: 18px;
+    color: #333;
+}
+
+#battery {
+    font-size: 18px;
+    color: #333;
+}
+
+#container {
+    /* position: absolute; */
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
