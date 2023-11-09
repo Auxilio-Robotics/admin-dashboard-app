@@ -7,19 +7,16 @@
 </head>
 <body>
     <div id="container">
-        <h1>Dashboard</h1>
+        <h1>Admin Dashboard</h1>
         <div id="dashboard">
             <div id="logo">
                 <img src="assets/images/logo.jpg" alt="Facility Logo">
             </div>
-            <div id="eta">
-                ETA: 10 min
+            <div id="battery">
+                Battery: 80%
             </div>
             <div id="task">
                 Task: Serving water
-            </div>
-            <div id="battery">
-                Battery: 80%
             </div>
         </div>
     </div>
@@ -51,14 +48,8 @@
         // Get database
         const database = getDatabase(app);
 
-        const EtaRef = ref(database, 'eta');
         const TaskRef = ref(database, 'current_task/task_type');
         const BatteryRef = ref(database, 'battery_state');
-
-        onValue(EtaRef, (snapshot) => {
-            const data = snapshot.val();
-            document.getElementById('eta').innerHTML = "ETA: " + data + " min";
-        });
 
         onValue(TaskRef, (snapshot) => {
             const data = snapshot.val();
