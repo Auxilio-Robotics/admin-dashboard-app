@@ -7,8 +7,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    -webkit-transform: scale(2);
-    transform: scale(2);
 }
 
 #dashboard {
